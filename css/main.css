@@ -1,0 +1,607 @@
+body {
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace
+}
+
+.nav-item {
+    color: white;
+    font-size: 16px;
+    font-weight: 800;
+    margin: 0 8px;
+}
+
+.nav-item:hover {
+    color: #f9c34e;
+}
+
+.wallet {
+    padding: 30px 20px
+}
+
+.wallet h1 {
+    color: #fff;
+    font-size: 20px
+}
+
+.wallet .walletItem {
+    text-align: center;
+    margin-bottom: 5px;
+    padding: 10px 20px;
+    border: 1px solid #f9c34e;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center
+}
+
+.wallet .walletItem .hoveredWalletItemBg {
+    display: none
+}
+
+.wallet .walletItem .walletImage {
+    width: 30px;
+    margin-right: 10px
+}
+
+.wallet .walletItem h2 {
+    color: #fff;
+    margin: 0;
+    font-size: 16px
+}
+
+.wallet .walletItem:hover {
+    cursor: pointer;
+    color: #febf33;
+    background-color: #3d1407;
+    border: 1px solid #f9c34e
+}
+
+.wallet .walletItem:hover .hoveredWalletItemBg {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0
+}
+
+.home {
+    min-height: 100vh;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: black;
+    /* background-image: url(/images/bg.jpg); */
+}
+
+.home .container {
+    width: 1200px;
+    max-width: 100%;
+    padding: 0 10px;
+    margin: 0 auto;
+    position: relative
+}
+
+.home .container .countdownWrapper {
+    color: #febf33;
+    text-align: center;
+    font-size: 16px
+}
+
+.home .container .countdownWrapper .Countdown {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.home .container .countdownWrapper .Countdown .Countdown-col {
+    display: flex;
+    flex-direction: row;
+    color: #febf33;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px
+}
+
+.home .container .countdownWrapper .Countdown .Countdown-col-element {
+    color: #febf33;
+    font-size: 30px
+}
+
+.home .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 50px 0 0
+}
+
+.home .header .walletWrapper {
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: 300px;
+    color: #f9c34e;
+    font-size: 16px;
+    padding: 5px 30px;
+    border: 1px solid #f9c34e;
+    border-radius: 20px;
+    text-align: center;
+    background: transparent;
+    font-weight: 700
+}
+
+.home .header .walletWrapper:hover {
+    cursor: pointer;
+    color: #fff;
+    background-color: #f9c34e
+}
+
+.home .header .logo {
+    width: 300px;
+}
+
+footer {
+    display: block;
+    text-align: center;
+    padding: 50px 0 20px;
+    align-items: center;
+}
+
+footer .socialMedias {
+    margin: 30px 0 0;
+}
+
+footer .socialMedias a {
+    margin: 0 15px
+}
+
+footer .socialMedias img {
+    width: 27px
+}
+
+.home .slogan {
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    line-height: 1.3;
+    font-weight: 800;
+    margin: 50px 0;
+}
+
+.home .buttonGroup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home .whitepaper {
+    min-width: 180px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 10px;
+    border: 2px solid #f9c34e;
+    background-color: #f9c34e;
+    padding: 5px 10px;
+    box-shadow: 0 3px #febf33;
+    color: #fff
+}
+
+.home .whitepaper a {
+    color: #fff
+}
+
+.home .whitepaper:hover {
+    cursor: pointer
+}
+
+.home .whitepaper:active {
+    background-color: #febf33;
+    box-shadow: 0 3px rgba(155, 114, 104, .78);
+    -webkit-transform: translateY(2px);
+    transform: translateY(2px)
+}
+
+.home .mainContent {
+    width: 800px;
+    max-width: 100%;
+    margin: 50px auto 0;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    grid-gap: 20px;
+    gap: 20px
+}
+
+.home .mainContent .box {
+    width: calc(50% - 10px)
+}
+
+.home .mainContent .leftBox {
+    padding: 20px;
+    background: #22272a;
+    border-radius: 20px
+}
+
+.home .mainContent .rightBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between
+}
+
+.home .mainContent .dataRow {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    margin: 5px 0;
+    color: white;
+    font-size: 18px;
+    line-height: 35px
+}
+
+.home .mainContent .dataRow .value {
+    font-weight: 600;
+    font-size: 22px;
+    color: white
+}
+
+.home .mainContent .ant-input-affix-wrapper {
+    height: 55px;
+    margin: 0;
+    position: relative;
+    border: 2px solid white;
+    box-shadow: none;
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    box-sizing: border-box;
+    border-radius: 40px;
+    background: #f9c34e
+}
+
+.home .mainContent .ant-input-affix-wrapper .ant-input-prefix, .home .mainContent .ant-input-affix-wrapper .ant-input-suffix {
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+.home .mainContent .ant-input-affix-wrapper .ant-input-prefix span, .home .mainContent .ant-input-affix-wrapper .ant-input-suffix span {
+    color: white
+}
+
+.home .mainContent .ant-input-affix-wrapper .suffix {
+    padding-right: 10px
+}
+
+.home .mainContent .ant-input-affix-wrapper .ant-input {
+    border: none;
+    color: white;
+    background: transparent;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 55px;
+    text-align: center;
+    padding-left: 25px
+}
+
+.home .mainContent .ant-input-affix-wrapper .ant-input:hover {
+    border: none !important
+}
+
+.home .mainContent .ant-input-affix-wrapper .ant-input:focus {
+    border: none !important;
+    outline: 0;
+    box-shadow: none !important
+}
+
+.home .mainContent .ant-input-affix-wrapper:not(.ant-input-affix-wrapper-disabled):hover {
+    border-color: #f9c34e !important;
+    border-right-width: 2px
+}
+
+.home .mainContent .ant-input-affix-wrapper-focused {
+    outline: 0;
+    border: 2px solid #f9c34e !important;
+    box-shadow: none !important
+}
+
+.home .mainContent .buyButton {
+    border: 2px solid #f9c34e;
+    border-radius: 30px;
+    color: #f9c34e;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 42px;
+    padding: 5px 0;
+    text-align: center;
+    display: block;
+    width: 100%;
+    background: transparent;
+    margin-top: 10px
+}
+
+.home .mainContent .buyButton:hover {
+    cursor: pointer;
+    border: 2px solid white;
+    color: white
+}
+
+.home .mainContent .actionWrapper {
+    margin-top: 30px;
+    border-top: 1px dashed #f9c34e;
+    padding-top: 10px
+}
+
+.home .mainContent .actionWrapper .actionButtons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.home .mainContent .actionWrapper .actionButtons button {
+    width: calc(50% - 10px);
+    text-align: center;
+    border: 2px solid #f9c34e;
+    color: #f9c34e;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 8px 0;
+    background: transparent;
+    border-radius: 30px;
+}
+
+.home .mainContent .actionWrapper .actionButtons button:hover {
+    cursor: pointer;
+    border: 2px solid white;
+    color: white
+}
+
+.home .mainContent .contractInfo {
+    background: #22272a;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    align-content: center;
+    margin-top: 20px;
+    justify-content: space-between
+}
+
+.home .mainContent .contractInfo img {
+    width: 25%
+}
+
+.home .mainContent .contractInfo .data {
+    width: 65%
+}
+
+.home .mainContent .contractInfo .data h1 {
+    color: white;
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 10px
+}
+
+.home .mainContent .contractInfo .data .dataRow {
+    font-size: 17px
+}
+
+.home .mainContent .referral {
+    background: #22272a;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.home .mainContent .referral h1 {
+    color: #f9c34e;
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 10px
+}
+
+.home .mainContent .referral p {
+    color: white
+}
+
+.home .mainContent .referral .refWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.home .mainContent .referral .refWrapper .referralLink {
+    flex-grow: 2;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 70%;
+    background: transparent;
+}
+
+.home .mainContent .referral .refWrapper .copyButton, .home .mainContent .referral .refWrapper .referralLink {
+    border: 2px solid #f9c34e;
+    box-sizing: border-box;
+    border-radius: 40px;
+    padding: 5px 20px;
+    background: transparent;
+    color: #f9c34e
+}
+
+.home .mainContent .referral .refWrapper .copyButton:hover {
+    cursor: pointer;
+    border: 2px solid white;
+    color: white
+}
+
+@media (max-width:765px) {
+    .nav-item {
+        color: white;
+        font-size: 16px;
+        font-weight: 800;
+        margin: 0 15px;
+    }
+
+    footer .nav-item {
+        font-size: 11px;
+    }
+
+    .home .header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 50px 0 0;
+        margin-bottom: 30px
+    }
+
+    .home .header .walletWrapper {
+        width: 250px;
+        font-size: 15px;
+        padding: 5px 0
+    }
+
+    .home .header .logo {
+        margin: 20px auto 20px
+    }
+
+    footer .socialMedias {
+        width: 100%;
+        text-align: center;
+    }
+
+    footer .socialMedias a {
+        margin: 0 20px
+    }
+
+    footer .socialMedias img {
+        width: 30px
+    }
+
+    .home .slogan {
+        font-size: 22px;
+        line-height: 1.5;
+        margin: 30px 0;
+    }
+
+
+    .home .mainContent {
+        margin: 30px auto 0;
+        align-items: center;
+        flex-direction: column;
+        grid-gap: 10px;
+        gap: 10px
+    }
+
+    .home .mainContent .box {
+        width: calc(100% - 20px)
+    }
+
+    .home .mainContent .referral {
+        margin-top: 10px
+    }
+}
+
+.blink_me {
+    -webkit-animation: blinker 2s linear 1;
+    animation: blinker 2s linear 1
+}
+
+@-webkit-keyframes blinker {
+    50% {
+        color: #fff;
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1)
+    }
+}
+
+@keyframes blinker {
+    50% {
+        color: #fff;
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1)
+    }
+}
+
+.Countdown {
+    margin: 0 auto
+}
+
+.Countdown-col {
+    display: inline-block
+}
+
+.Countdown-col-element {
+    display: inline-block;
+    margin: 0;
+    font-weight: 600
+}
+
+.customModal .ant-modal-content {
+    overflow-y: scroll;
+    min-height: 300px;
+    border-radius: 20px;
+    width: 350px;
+    max-width: 100%;
+    margin: 0 auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    border: 2px solid #f9c34e;
+    background-color: #f9c34e
+}
+
+.customModal .ant-modal-content::-webkit-scrollbar {
+    display: none
+}
+
+.customModal .ant-modal-content .ant-modal-body {
+    padding: 10px 0
+}
+
+.customModal .ant-modal-content .ant-modal-body .close {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    z-index: 3;
+    cursor: pointer;
+    width: 25px;
+    opacity: .9;
+    font-size: 20px;
+    color: #fff
+}
+
+.customModal .ant-modal-content .ant-modal-body .title {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 10px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%)
+}
+
+.customModal .ant-modal-content .ant-modal-body .modalHeader {
+    width: calc(100% - 20px);
+    margin: 10px
+}
+
+.customModal .ant-modal-close-x {
+    color: #fff;
+    display: none
+}
+
+/*# sourceMappingURL=main.6d6e9887.chunk.css.map */
